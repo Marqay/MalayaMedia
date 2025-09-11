@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Malaysia MADANI</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f4f6f9; color: #333;
+    }
+
+    nav {
+      background: #010066;
+      padding: 15px 30px;
+      display: flex; 
+      justify-content: space-between;
+      align-items: center;
+      position: sticky; top: 0;
+      z-index: 10;
+    }
+    nav .logo {
+      color: #FFD700;
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+    nav .menu {
+      display: flex; gap: 25px;
+    }
+    nav .menu a {
+      color: #fff; text-decoration: none;
+      font-weight: bold; transition: 0.3s;
+    }
+    nav .menu a:hover {
+      color: #FFD700;
+    }
+
+    header {
+      background: #010066;
+      color: #FFD700;
+      text-align: center;
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    .gallery {
+      padding: 60px 40px;
+      text-align: justify;
+    }
+    .gallery h2 {
+      font-size: 2rem;
+      margin-bottom: 40px;
+      color: #010066;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .gallery-card {
+      background: white;
+      border: 2px solid #010066;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+      text-align: center;
+    }
+    .gallery-card:hover {
+      transform: translateY(-6px);
+    }
+    .gallery-card a {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+    }
+    .gallery-card img {
+      width: 100%;
+      height: auto; 
+      border-radius: 8px;
+      margin-bottom: 12px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+    .gallery-card img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+    }
+    .gallery-card p {
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background: #CC0000; color: #fff;
+      text-align: center; padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">MalayaMedia</div>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="food.html">Traditional Food</a>
+      <a href="cultural.html">Cultural</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Gallery</h1>
+  </header>
+
+  <section class="gallery">
+    <div class="gallery-grid">
+      <div class="gallery-card">
+        <a href="https://diplomaticwatch.com/malaysia-celebrates-68th-national-day-2025-with-madani-theme-and-spectacular-parade/" target="_blank">
+          <img src="img/g1.png" alt="Gambar 1">
+        </a>
+        <p>Malaysia marked its 68th National Day on 31 August 2025. The theme “Malaysia MADANI: Rakyat Disantuni” drove the proceedings. More than 100,000 people gathered at Dataran Putrajaya, also known as Putra Square, lined by the Prime Minister’s office, the Putra Mosque, and enduring geometric gardens that frame the central performance area.</p>
+      </div>
+
+      <div class="gallery-card">
+        <a href="https://www.thestar.com.my/aseanplus/aseanplus-news/2025/09/07/strong-malaysia-brunei-relations-shine-at-68th-national-day-reception" target="_blank">
+          <img src="img/g2.png" alt="Gambar 2">
+        </a>
+        <p>BANDAR SERI BEGAWAN (Bernama): From the rhythmic sounds of Kulintangan to the graceful moves of silat, Malaysia’s 68th National Day reception in Brunei was a lively celebration of shared heritage, friendship, and flavours that united Malaysians and Bruneians under one roof.</p>
+      </div>
+
+      <div class="gallery-card">
+        <a href="https://www.thevibes.com/articles/news/112201/patriotic-fervour-unites-thousands-at-malaysias-68th-national-day" target="_blank">
+          <img src="img/g3.png" alt="Gambar 3">
+        </a>
+        <p>A WAVE of patriotism swept across Dataran Putrajaya this morning as the 68th National Day celebration, themed ‘Malaysia MADANI: Rakyat Disantuni’, unfolded in a grand and heartfelt spectacle. Thousands of Malaysians, many of whom arrived as early as Saturday evening, filled the square in anticipation of the nation’s most symbolic day.</p>
+      </div>
+
+      <div class="gallery-card">
+        <a href="https://www.thestar.com.my/lifestyle/family/2025/08/29/starchild-national-day-through-malaysian-children039s-eyes" target="_blank">
+          <img src="img/g4.png" alt="Gambar 4">
+        </a>
+        <p>Starchild : National Day Through Malaysian Children’s Eyes</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © MalayaMedia.
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traditional Food - Malaysia MADANI</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f4f6f9; color: #333;
+    }
+
+    
+    nav {
+      background: #010066;
+      padding: 15px 30px;
+      display: flex; 
+      justify-content: space-between;
+      align-items: center;
+      position: sticky; top: 0;
+      z-index: 10;
+    }
+    nav .logo {
+      color: #FFD700;
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+    nav .menu {
+      display: flex; gap: 25px;
+    }
+    nav .menu a {
+      color: #fff; text-decoration: none;
+      font-weight: bold; transition: 0.3s;
+    }
+    nav .menu a:hover {
+      color: #FFD700;
+    }
+
+    
+    header {
+      background: #010066;
+      color: #FFD700;
+      text-align: center;
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    
+    .foods {
+      padding: 60px 40px;
+      text-align: justify;
+    }
+    .foods h2 {
+      font-size: 2rem;
+      margin-bottom: 40px;
+      color: #010066;
+    }
+    .food-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .food-card {
+      background: white;
+      border: 2px solid #010066;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .food-card:hover {
+      transform: translateY(-6px);
+    }
+    .food-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .food-card h3 {
+      color: #D40000;
+      margin-bottom: 10px;
+	  text-align: center;
+    }
+    .food-card p {
+      font-size: 0.95rem;
+    }
+
+    
+    footer {
+      background: #CC0000; color: #fff;
+      text-align: center; padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <nav>
+    <div class="logo">MalayaMedia</div>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="food.html">Traditional Food</a>
+      <a href="cultural.html">Cultural</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+ 
+  <header>
+    <h1>Traditional Food</h1>
+  </header>
+
+  
+  <section class="foods">
+    <div class="food-grid">
+      <div class="food-card">
+        <img src="img/nasilemak.jpg" alt="Nasi Lemak">
+        <h3>Nasi Lemak</h3>
+        <p>Nasi lemak is one of Malaysia’s most iconic and beloved traditional dishes, often considered the country’s national dish. The name literally means “rich rice” referring to the creamy, fragrant rice that is cooked in coconut milk and infused with pandan leaves for an aromatic flavor. Served with sambal, fried anchovies, peanuts, egg and cucumber</p>
+      </div>
+      <div class="food-card">
+        <img src="img/laksa.jpg" alt="Satay">
+        <h3>Laksa</h3>
+        <p> A popular and flavorful noodle dish in Malaysia. known for its rich, spicy, and aromatic broth. It is considered a comfort food and a symbol of the region’s multicultural food heritage.</p>
+      </div>
+      <div class="food-card">
+        <img src="img/kuihrose.jpg" alt="Roti Canai">
+        <h3>Kuih Ros</h3>
+        <p>Traditional Malaysian snack that is especially popular during festive seasons such as Hari Raya Aidilfitri, Chinese New Year, and Deepavali. The name “ros” (rose) comes from its beautiful flower-like shape</p>
+      </div>
+      <div class="food-card">
+        <img src="img/abc.jpg" alt="Cendol">
+        <h3>Ais Batu Campur (ABC) </h3>
+        <p>Famous Malaysian dessert that is colorful, refreshing, and packed with different textures and flavors. It is especially popular on hot days because of its cooling and sweet taste. Shaved ice topped with syrup, red beans, sweet corn, jelly and ice cream.</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer>
+    © MalayaMedia. 
+  </footer>
+
+</body>
+</html>
