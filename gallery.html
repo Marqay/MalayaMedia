@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Malaysia MADANI</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f4f6f9; color: #333;
+    }
+
+    nav {
+      background: #010066;
+      padding: 15px 30px;
+      display: flex; 
+      justify-content: space-between;
+      align-items: center;
+      position: sticky; top: 0;
+      z-index: 10;
+    }
+    nav .logo {
+      color: #FFD700;
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+    nav .menu {
+      display: flex; gap: 25px;
+    }
+    nav .menu a {
+      color: #fff; text-decoration: none;
+      font-weight: bold; transition: 0.3s;
+    }
+    nav .menu a:hover {
+      color: #FFD700;
+    }
+
+    header {
+      background: #010066;
+      color: #FFD700;
+      text-align: center;
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 3s steps(25, end) forwards;
+    }
+   @keyframes typing {
+      from { width: 0 }
+      to { width: 23ch }
+    }
+
+    .gallery {
+      padding: 60px 40px;
+    }
+    .gallery h2 {
+      font-size: 2rem;
+      margin-bottom: 40px;
+      color: #010066;
+      text-align: center;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 25px;
+    }
+
+    .gallery-card {
+      background: white;
+      border: 2px solid #010066;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+      text-align: center;
+    }
+    .gallery-card:hover {
+      transform: translateY(-6px);
+    }
+    .gallery-card a {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+    }
+    .gallery-card img {
+      width: 100%;
+      height: auto; 
+      border-radius: 8px;
+      margin-bottom: 12px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+    .gallery-card img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+    }
+    .gallery-card p {
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background: #CC0000; color: #fff;
+      text-align: center; padding: 20px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 900px) {
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 600px) {
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">MalayaMedia</div>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="food.html">Traditional Food</a>
+      <a href="cultural.html">Cultural</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Gallery</h1>
+  </header>
+
+  <section class="gallery">
+    <div class="gallery-grid">
+      <div class="gallery-card">
+        <a href="https://diplomaticwatch.com/malaysia-celebrates-68th-national-day-2025-with-madani-theme-and-spectacular-parade/" target="_blank">
+          <img src="img/g1.png" alt="Gambar 1">
+          <p>Malaysia marked its 68th National Day on 31 August 2025 with the theme “Malaysia MADANI: Rakyat Disantuni”.</p>
+        </a>
+      </div>
+      <div class="gallery-card">
+        <a href="https://www.thestar.com.my/aseanplus/aseanplus-news/2025/09/07/strong-malaysia-brunei-relations-shine-at-68th-national-day-reception" target="_blank">
+          <img src="img/g2.png" alt="Gambar 2">
+          <p>Malaysia’s 68th National Day reception in Brunei celebrated friendship and shared heritage.</p>
+        </a>
+      </div>
+      <div class="gallery-card">
+        <a href="https://www.thevibes.com/articles/news/112201/patriotic-fervour-unites-thousands-at-malaysias-68th-national-day" target="_blank">
+          <img src="img/g3.png" alt="Gambar 3">
+          <p>A wave of patriotism swept across Dataran Putrajaya during the National Day celebration.</p>
+        </a>
+      </div>
+      <div class="gallery-card">
+        <a href="https://www.thestar.com.my/lifestyle/family/2025/08/29/starchild-national-day-through-malaysian-children039s-eyes" target="_blank">
+          <img src="img/g4.png" alt="Gambar 4">
+          <p>National Day Through Malaysian Children’s Eyes showcased youthful pride and imagination.</p>
+        </a>
+      </div>
+      <div class="gallery-card">
+        <a href="https://www.instagram.com/p/C_seALiTfB1/?igsh=MXg0cWZ4ajV1Y24wNA==" target="_blank">
+          <img src="img/newg1.jpeg" alt="Gambar 5">
+          <p>The Asia Food Fest celebrates the variety of halal food from across Asia. Held at Jaya Shopping Centre, it gathers different Asian cuisines such as Japanese, Thai, and Malaysian dishes. The event promotes cultural harmony, encourages people to explore regional flavours, and strengthens appreciation for Asia’s rich culinary traditions.</p>
+        </a>
+      </div>
+      <div class="gallery-card">
+        <a href="https://www.instagram.com/p/DAdrpO7o_qi/?igsh=YXI3cjB0NGxlaGRx" target="_blank">
+          <img src="img/newg2.jpeg" alt="Gambar 6">
+          <p>The Malaysia Food &amp; Cultural Festival aims to promote Malaysia’s rich food and cultural heritage in Chennai, India. Organized by the Consulate General of Malaysia and Tourism Malaysia, the event strengthens diplomatic ties between both countries.</p>
+        </a>
+      </div>
+      <div class="gallery-card">
+        <a href="https://www.instagram.com/p/DPd4aNiEQaH/?igsh=YXprMHFwd2Ryb3po" target="_blank">
+          <img src="img/newgg.jpeg" alt="Gambar 7">
+          <p>The Havoc Food Festival brings together local and international food brands in a fun, colourful environment at Setia City Convention Centre. Supported by Tourism Malaysia, it offers visitors food, music, and entertainment. The festival supports local businesses, attracts families and youth, and promotes Malaysia’s vibrant food culture and tourism industry.</p>
+        </a>
+      </div>
+      <div class="gallery-card">
+        <a href="https://vt.tiktok.com/ZSUFtY8xD/" target="_blank">
+          <img src="img/newg4.jpeg" alt="Gambar 8">
+          <p>The Big Food Festival featuring Ubi Lambung brings Malaysians together through their shared love of food. With colorful flavors like pandan and pumpkin, it celebrates the nation’s diversity and creativity. The event strengthens community bonds, supports local vendors, and reflects Malaysia’s unity in diversity</p>
+        </a>
+      </div>
+    </div>
+  </section>
+  <footer>
+    © MalayaMedia.
+  </footer>
+
+</body>
+</html>

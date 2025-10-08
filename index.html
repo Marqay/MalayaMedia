@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Malaysia MADANI: Rakyat Disantuni</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0; padding: 0;
+    background: #f4f6f9; color: #333;
+    overflow-x: hidden;
+  }
+
+  #intro {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100vh;
+    background-color: #010066;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    flex-direction: column;
+  }
+
+  #intro h1 {
+    color: #FFD700;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    animation: popGlow 3s ease forwards;
+  }
+
+  @keyframes popGlow {
+    0% {opacity:0; transform:scale(0.5);}
+    50% {opacity:1; transform:scale(1.2);}
+    100% {opacity:0; transform:scale(1.5);}
+  }
+
+  #content { opacity: 0; transition: opacity 1s ease; }
+  #content.show { opacity: 1; }
+
+  nav {
+    background: #010066; 
+    padding: 15px 30px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; top: 0;
+    z-index: 10;
+  }
+
+  nav .logo {
+    color: #FFD700;
+    font-size: 1.3rem;
+    font-weight: bold;
+    transform: scale(0);
+    animation: logoZoom 1s ease forwards;
+    transform-origin: left center;
+  }
+  @keyframes logoZoom {
+    0% { transform: scale(0); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+
+  nav .menu { display:flex; gap:25px; }
+  nav .menu a { color:#fff; text-decoration:none; font-weight:bold; transition:0.3s; }
+  nav .menu a:hover { color:#FFD700; }
+
+  header {
+    background: url("img/homepage.jpg") no-repeat center center/cover;
+    color:#FFD700;
+    text-align:center;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+  }
+  header::before {
+    content:"";
+    position:absolute; top:0; left:0; right:0; bottom:0;
+    background:rgba(0,0,0,0.5);
+  }
+
+  #animated-text {
+    position: relative;
+    z-index: 1;
+    font-size: 2.8rem;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    color: #FFD700;
+    text-align: center;
+  }
+
+  .container { padding:40px; max-width:1000px; margin:auto; text-align:center; }
+
+  .features { padding:60px 40px; background:#f9f9f9; text-align:center; }
+  .features h2 { font-size:2rem; margin-bottom:40px; color:#010066; }
+
+  .cards {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+  }
+  .card {
+    background:#FFD700;
+    border:2px solid #010066;
+    border-radius:12px;
+    padding:25px;
+    min-height:150px;
+    display:flex;
+    flex-direction:column;
+    justify-content:justify;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .card:hover { transform:translateY(-8px); box-shadow:0 6px 16px rgba(0,0,0,0.2); }
+  .card h3 { color:#D40000; margin-bottom:12px; }
+  .card video { width:100%; border-radius:10px; margin-bottom:10px; box-shadow:0 3px 8px rgba(0,0,0,0.2); }
+
+  .stripe-box { background:#010066; color:white; text-align:center; padding:80px; font-size:2.5rem; font-weight:bold; margin-bottom:70px; }
+  footer { background:#CC0000; color:#fff; text-align:center; padding:20px; margin-top:0; }
+</style>
+</head>
+<body>
+
+<div id="intro">
+  <h1>MalayaMedia</h1>
+</div>
+
+<div id="content">
+  <nav>
+    <div class="logo">MalayaMedia</div>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="food.html">Traditional Food</a>
+      <a href="cultural.html">Cultural</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1 id="animated-text">Malaysia's 68th National Day | Malaysia MADANI : Rakyat Disantuni</h1>
+  </header>
+
+  <div class="container">
+    <p><strong>Malaysia National Day</strong> also known as <strong>Malaysia Independence Day</strong> is observed on <strong>August 31</strong> every year. <strong>Malaysia National Day 2025</strong> commemorates the Malayan Declaration of Independence of <strong>August 31, 1957</strong>. It is defined in Article 160 of the constitution of Malaysia as the official Independence day when the country gained its freedom from British rule. Usually, <strong>Malaysia National Day</strong> celebrations begin in Malaysia from the start of August with various programs and national competitions. At the time of independence, Malaysia did not have a national anthem. <strong>Tunku Abdul Rahman</strong> decided to organize a worldwide competition to find a suitable national anthem for Malaysia and 512 entries were submitted. In the end, Rahman opted to use the Perak State anthem’s melody for the Malaysian national anthem. The anthem was rearranged to give it a livelier rhythm, which was unpopular with the citizens. In 2003, the tempo was returned to what it was originally.</p>
+  </div>
+
+  <section class="features">
+    <h2>Malaysia National Day 2025</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>#1</h3>
+        <video controls><source src="vid/merdeka.mp4" type="video/mp4"></video>
+        <p>This video captures the unity, courage, and love for the homeland that continue to inspire Malaysians to uphold the true meaning of freedom.</p>
+      </div>
+      <div class="card">
+        <h3>#2</h3>
+        <video controls><source src="vid/jentera.mp4" type="video/mp4"></video>
+        <p>This video shows the strength and dedication of Malaysia’s national machinery—from government agencies to the people who keep the country moving forward.</p>
+      </div>
+      <div class="card">
+        <h3>#3</h3>
+        <video controls><source src="vid/saloma.mp4" type="video/mp4"></video>
+        <p>This video highlights the iconic landmarks and architectural masterpieces that symbolize Malaysia’s progress and identity.</p>
+      </div>
+      <div class="card">
+        <h3>#4</h3>
+        <video controls><source src="vid/menari.mp4" type="video/mp4"></video>
+        <p>This video showcases Malaysians dancing joyfully together, reflecting the harmony and unity among people of diverse races and cultures.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <h3>ABOUT</h3>
+    <p><strong><em>“Malaysia MADANI: Rakyat Disantuni.”</em></strong> Thousands gathered just after sunrise, with VIPs arriving punctually including the Yang di-Pertuan <strong>Agong Sultan Ibrahim</strong> and <strong>Prime Minister Anwar Ibrahim</strong>. A massive parade followed, featuring 81 contingents with over 14,000 participants, 21 marching bands, seven decorated floats, 508 land and air assets, and 116 service animals. Among the high points was a human-graphics display by about 2,000 students who spelled out powerful national mottos such as <em>Daulat Tuanku, Rukun Negara, and Negaraku.</em> There was also an impressive air show by the Royal Malaysian Air Force, a striking moment when an 80-by-40 foot Jalur Gemilang was carried by cadet officers, and a thematic parade of creative and industry sectors including an interactive truck with the message “Merdeka daripada scam.” The event closed with the <strong><em>“Citra MADANI”</em></strong> segment, a cultural performance involving government agencies, schools, and arts groups, celebrating Malaysia’s diversity.</p>
+  </div>
+
+  <div class="stripe-box">"Madani Unity, Humanity Served"</div>
+
+  <footer>© MalayaMedia.</footer>
+</div>
+
+<script>
+
+  setTimeout(() => {
+    document.getElementById('intro').style.display = 'none';
+    document.getElementById('content').classList.add('show');
+  }, 3000);
+</script>
+
+</body>
+</html>

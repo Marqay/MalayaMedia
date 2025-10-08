@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traditional Food - Malaysia MADANI</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f4f6f9; color: #333;
+    }
+
+    nav {
+      background: #010066;
+      padding: 15px 30px;
+      display: flex; 
+      justify-content: space-between;
+      align-items: center;
+      position: sticky; top: 0;
+      z-index: 10;
+    }
+    nav .logo {
+      color: #FFD700;
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+    nav .menu {
+      display: flex; gap: 25px;
+    }
+    nav .menu a {
+      color: #fff; text-decoration: none;
+      font-weight: bold; transition: 0.3s;
+    }
+    nav .menu a:hover {
+      color: #FFD700;
+    }
+
+    header {
+      background: #010066;
+      color: #FFD700;
+      text-align: center;
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Header typing effect without blinking cursor */
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 3s steps(30, end) forwards;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 18ch }
+    }
+
+    .foods {
+      padding: 60px 40px;
+      text-align: justify;
+    }
+    .foods h2 {
+      font-size: 2rem;
+      margin-bottom: 40px;
+      color: #010066;
+    }
+    .food-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 25px;
+    }
+
+    .food-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      border: 2px solid #010066;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .food-card:hover {
+      transform: scale(1.05);
+    }
+    .food-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+      display: block;
+    }
+
+    .food-desc {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(1, 0, 102, 0.95);
+      color: #FFD700;
+      padding: 20px;
+      text-align: justify;
+      transform: translateY(100%);
+      opacity: 0;
+      transition: transform 0.4s ease, opacity 0.4s ease 0.15s;
+    }
+    .food-card:hover .food-desc {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    .food-desc h3 {
+      margin: 0 0 10px;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+    .food-desc p {
+      font-size: 0.95rem;
+      margin: 0;
+    }
+
+    footer {
+      background: #CC0000; 
+      color: #fff;
+      text-align: center; 
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 900px) {
+      .food-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 600px) {
+      .food-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">MalayaMedia</div>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="food.html">Traditional Food</a>
+      <a href="cultural.html">Cultural</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Traditional Food</h1>
+  </header>
+
+  <section class="foods">
+    <div class="food-grid">
+      <div class="food-card">
+        <img src="img/malay1.jpeg" alt="Nasi Lemak">
+        <div class="food-desc">
+          <h3>Lontong</h3>
+          <p>A traditional Southeast Asian dish made from compressed rice cake, usually cut into small cubes and served with a variety of side dishes. It’s often enjoyed with vegetable curry (sayur lodeh), peanut sauce, boiled eggs, or rendang.</p>
+        </div>
+      </div>
+      <div class="food-card">
+        <img src="img/malayyy.jpeg" alt="Laksa">
+        <div class="food-desc">
+          <h3>Lepat Pisang</h3>
+          <p>A traditional Malaysian snack made from mashed bananas mixed with grated coconut and a touch of sugar, wrapped in banana leaves, and steamed to perfection.</p>
+        </div>
+      </div>
+      <div class="food-card">
+        <img src="img/malay3.jpeg" alt="Kuih Ros">
+        <div class="food-desc">
+          <h3>Tepung Pelita</h3>
+          <p>A traditional Malaysian dessert known for its two-layered, creamy texture. The bottom layer is made from sweet pandan-flavored rice flour, while the top layer is rich coconut milk with a slightly salty taste creating a perfect balance of flavors.</p>
+        </div>
+      </div>
+      <div class="food-card">
+        <img src="img/malay4.jpeg" alt="ABC">
+        <div class="food-desc">
+          <h3>Nona Manis Pandan</h3>
+          <p>A Malaysian dessert featuring a soft pandan-flavored layer topped with a rich, creamy coconut custard. It has a sweet and fragrant taste, with the natural aroma of pandan giving it a refreshing tropical flavor.</p>
+        </div>
+      </div>
+      <div class="food-card">
+        <img src="img/india1.jpeg" alt="Satay">
+        <div class="food-desc">
+          <h3>Panipuri</h3>
+          <p>A famous street food snack, loved for its crispy, hollow puris filled with a flavorful mix of spiced water (pani), mashed potatoes, chickpeas, and tamarind chutney.</p>
+        </div>
+      </div>
+      <div class="food-card">
+        <img src="img/india2.jpeg" alt="Roti Canai">
+        <div class="food-desc">
+          <h3>Chapati</h3>
+          <p>A traditional unleavened flatbread made from whole wheat flour, water, and a pinch of salt. It’s cooked on a hot griddle until soft and slightly browned, often brushed with a bit of oil or ghee for extra flavor.</p>
+        </div>
+      </div>
+      <div class="food-card">
+        <img src="img/idli.jpeg" alt="Cendol">
+        <div class="food-desc">
+          <h3>Idli</h3>
+          <p>A steamed rice cake made from a fermented batter of rice and urad dal (black lentils). Soft, fluffy, and light, idlis are a healthy breakfast favorite across India and Malaysia.</p>
+        </div>
+      </div>
+      <div class="food-card">
+        <img src="img/india4.jpeg" alt="Mee Goreng">
+        <div class="food-desc">
+          <h3>Roti Naan</h3>
+          <p>A soft and fluffy flatbread traditionally baked in a tandoor (clay oven), giving it a slightly smoky flavor and crispy edges. Made from wheat flour, yogurt, and yeast, pairs perfectly with butter chicken, tandoori dishes, or rich curries.</p>
+        </div>
+      </div>
+      <div class="food-card">
+        <img src="img/cina1.jpeg" alt="Nasi Kerabu">
+        <div class="food-desc">
+          <h3>Mooncake</h3>
+          <p>A traditional Chinese enjoyed during the Mid-Autumn Festival, symbolizing reunion and harmony. It has a rich, dense filling and often made from lotus seed paste, red bean paste, or mixed nuts also sometimes contains a salted egg yolk representing the full moon.</p>
+        </div>
+      </div>
+      <div class="food-card">
+        <img src="img/cina2.jpeg" alt="Lemang">
+        <div class="food-desc">
+          <h3>Dimsum</h3>
+          <p>A Chinese cuisine consisting of a variety of small bite-sized dishes, usually served in bamboo steamers or small plates.</p>
+        </div>
+      </div>
+      <div class="food-card">
+        <img src="img/cina3.jpeg" alt="Rendang">
+        <div class="food-desc">
+          <h3>Tang Yuan</h3>
+          <p>A traditional Chinese dessert made of glutinous rice balls, often filled with sweet sesame, peanut, or red bean paste, and served in a warm, lightly sweetened syrup or ginger soup.</p>
+        </div>
+      </div>
+      <div class="food-card">
+        <img src="img/cina4.jpeg" alt="Teh Tarik">
+        <div class="food-desc">
+          <h3>Kuih Bakul</h3>
+          <p>A traditional sticky rice cake made from glutinous rice flour and brown sugar. It has a sweet, chewy texture and is often steamed in banana-leaf-lined containers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © MalayaMedia.
+  </footer>
+
+</body>
+</html>

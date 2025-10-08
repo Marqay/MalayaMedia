@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cultural Significance - Malaysia MADANI</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f4f6f9; color: #333;
+    }
+
+    nav {
+      background: #010066;
+      padding: 15px 30px;
+      display: flex; 
+      justify-content: space-between;
+      align-items: center;
+      position: sticky; top: 0;
+      z-index: 10;
+    }
+    nav .logo {
+      color: #FFD700;
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+    nav .menu {
+      display: flex; gap: 25px;
+    }
+    nav .menu a {
+      color: #fff; text-decoration: none;
+      font-weight: bold; transition: 0.3s;
+    }
+    nav .menu a:hover {
+      color: #FFD700;
+    }
+
+    header {
+      background: #010066;
+      color: #FFD700;
+      text-align: center;
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Typing effect without blinking cursor */
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 3s steps(25, end) forwards;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 23ch }
+    }
+
+    section {
+      padding: 60px 40px;
+    }
+    details {
+      margin-bottom: 30px;
+      background: #fff;
+      border-radius: 12px;
+      border: 2px solid #010066;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    summary {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #010066;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+      text-align: center;
+    }
+    .image-grid img {
+      width: 100%;
+      border-radius: 10px;
+      border: 2px solid #FFD700;
+      height: 180px;
+      object-fit: cover;
+    }
+    .image-grid p {
+      margin-top: 8px;
+      font-weight: bold;
+      color: #D40000;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    iframe {
+      width: 100%;
+      height: 200px;
+      border-radius: 10px;
+      border: none;
+    }
+	   .stripe-box {
+      background: #010066; 
+      color: white;
+      text-align: center;
+      padding: 80px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 70px;
+    }
+
+    footer {
+      background: #CC0000; 
+      color: #fff;
+      text-align: center; 
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">MalayaMedia</div>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="food.html">Traditional Food</a>
+      <a href="cultural.html">Cultural</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Cultural Significance</h1>
+  </header>
+
+  <section>
+    <details>
+      <summary>Malay Culture</summary>
+
+      <div class="image-grid">
+        <div>
+          <img src="img/malayyy.jpeg" alt="Lepat Pisang">
+          <p>Lepat Pisang</p>
+        </div>
+        <div>
+          <img src="img/malay4.jpeg" alt="Kuih Nona Manis">
+          <p>Kuih Nona Manis</p>
+        </div>
+        <div>
+          <img src="img/malyyy.jpeg" alt="Tepung Pelita">
+          <p>Tepung Pelita</p>
+        </div>
+        <div>
+          <img src="img/malay1.jpeg" alt="Lontong">
+          <p>Lontong</p>
+        </div>
+      </div>
+
+      <div class="video-grid">
+        <iframe src="https://www.youtube.com/embed/Cp9fLWMKC9w" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/ifHqvBcFVTI" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/4Y2m4Ad4A6s" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/tneY2-cU31Q" allowfullscreen></iframe>
+      </div>
+    </details>
+
+    <details>
+      <summary>Indian Culture</summary>
+
+      <div class="image-grid">
+        <div>
+          <img src="img/india4.jpeg" alt="Roti Naan">
+          <p>Roti Naan</p>
+        </div>
+        <div>
+          <img src="img/india2.jpeg" alt="Chapati">
+          <p>Chapati</p>
+        </div>
+        <div>
+          <img src="img/india1.jpeg" alt="Panipuri">
+          <p>Panipuri</p>
+        </div>
+        <div>
+          <img src="img/idli.jpeg" alt="Idli">
+          <p>Idli</p>
+        </div>
+      </div>
+
+      <div class="video-grid">
+        <iframe src="https://www.youtube.com/embed/F4Qy8GHKU68" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/L0fRM0feSgM" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/CZSEED2qyXE" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/Ayo80PIb-Qg" allowfullscreen></iframe>
+      </div>
+    </details>
+
+    <details>
+      <summary>Chinese Culture</summary>
+
+      <div class="image-grid">
+        <div>
+          <img src="img/cina2.jpeg" alt="Dimsum">
+          <p>Dimsum</p>
+        </div>
+        <div>
+          <img src="img/cina1.jpeg" alt="Mooncake">
+          <p>Mooncake</p>
+        </div>
+        <div>
+          <img src="img/cina4.jpeg" alt="Kuih Bakul">
+          <p>Kuih Bakul</p>
+        </div>
+        <div>
+          <img src="img/cina3.jpeg" alt="Tang Yuan">
+          <p>Tang Yuan</p>
+        </div>
+      </div>
+
+      <div class="video-grid">
+        <iframe src="https://www.youtube.com/embed/3ga-z-F1NKI" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/i7UuqBsNBek" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/yV-frNXKrnw" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/Rozqrs80VP8" allowfullscreen></iframe>
+      </div>
+    </details>
+  </section>
+	 <div class="stripe-box">
+    Malaysia’s diverse foods unite its people through shared tastes and traditions. Malay dishes like lontong, lepat pisang, tepung pelita, and nona manis pandan are enjoyed by all races, especially during festive seasons. Chinese delicacies such as dim sum, mooncake, kuih bakul, and tang yuan bring people together during celebrations and symbolize harmony. Indian favourites like panipuri, chapati, roti naan, and idli are loved at mamak stalls, where Malaysians of every background gather. Through these dishes, Malaysians learn to appreciate one another’s cultures, showing that food is not just nourishment—it is a bridge of unity, friendship, and national pride.
+  </div>
+
+  <footer>
+    © MalayaMedia.
+  </footer>
+
+</body>
+</html>
